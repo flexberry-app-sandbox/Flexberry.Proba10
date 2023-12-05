@@ -37,6 +37,8 @@ namespace IIS.Proba_10
         
         private string fНазв;
         
+        private IIS.Proba_10.Дом fДом;
+        
         // *** Start programmer edit section *** (Улица CustomMembers)
 
         // *** End programmer edit section *** (Улица CustomMembers)
@@ -71,6 +73,40 @@ namespace IIS.Proba_10
                 // *** Start programmer edit section *** (Улица.Назв Set end)
 
                 // *** End programmer edit section *** (Улица.Назв Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Улица.
+        /// </summary>
+        // *** Start programmer edit section *** (Улица.Дом CustomAttributes)
+
+        // *** End programmer edit section *** (Улица.Дом CustomAttributes)
+        [PropertyStorage(new string[] {
+                "Дом"})]
+        [NotNull()]
+        public virtual IIS.Proba_10.Дом Дом
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Улица.Дом Get start)
+
+                // *** End programmer edit section *** (Улица.Дом Get start)
+                IIS.Proba_10.Дом result = this.fДом;
+                // *** Start programmer edit section *** (Улица.Дом Get end)
+
+                // *** End programmer edit section *** (Улица.Дом Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Улица.Дом Set start)
+
+                // *** End programmer edit section *** (Улица.Дом Set start)
+                this.fДом = value;
+                // *** Start programmer edit section *** (Улица.Дом Set end)
+
+                // *** End programmer edit section *** (Улица.Дом Set end)
             }
         }
         

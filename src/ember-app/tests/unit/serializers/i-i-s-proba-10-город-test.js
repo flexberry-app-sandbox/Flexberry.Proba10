@@ -10,6 +10,7 @@ moduleForModel('i-i-s-proba-10-город', 'Unit | Serializer | i-i-s-proba-10-
     'transform:guid',
 
     'model:i-i-s-proba-10-город',
+    'model:i-i-s-proba-10-дом',
     'model:i-i-s-proba-10-улица',
     'validator:ds-error',
     'validator:presence',

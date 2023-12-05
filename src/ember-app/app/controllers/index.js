@@ -22,13 +22,19 @@ export default Controller.extend({
             link: 'i-i-s-proba-10-город-l',
             caption: i18n.t('forms.application.sitemap.proba-10.i-i-s-proba-10-город-l.caption'),
             title: i18n.t('forms.application.sitemap.proba-10.i-i-s-proba-10-город-l.title'),
-            icon: 'calendar',
+            icon: 'tags',
             children: null
           }, {
             link: 'i-i-s-proba-10-улица-l',
             caption: i18n.t('forms.application.sitemap.proba-10.i-i-s-proba-10-улица-l.caption'),
             title: i18n.t('forms.application.sitemap.proba-10.i-i-s-proba-10-улица-l.title'),
-            icon: 'briefcase',
+            icon: 'chart bar',
+            children: null
+          }, {
+            link: 'i-i-s-proba-10-дом-l',
+            caption: i18n.t('forms.application.sitemap.proba-10.i-i-s-proba-10-дом-l.caption'),
+            title: i18n.t('forms.application.sitemap.proba-10.i-i-s-proba-10-дом-l.title'),
+            icon: 'archive',
             children: null
           }]
         }

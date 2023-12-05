@@ -4,6 +4,7 @@ moduleForModel('i-i-s-proba-10-город', 'Unit | Model | i-i-s-proba-10-го�
   // Specify the other units that are required for this test.
   needs: [
     'model:i-i-s-proba-10-город',
+    'model:i-i-s-proba-10-дом',
     'model:i-i-s-proba-10-улица',
     'validator:ds-error',
     'validator:presence',

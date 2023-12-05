@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-proba-10-дом-e",
+  "editForm": "i-i-s-proba-10-дом-e",
+  "external": false,
+  "caption": "",
+  "name": "IISProba_10ДомL",
+  "className": "ДомL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proba-10-дом",
+      "modelProjection": "ДомL"
+    }
+  ]
+}

@@ -2,10 +2,13 @@ import $ from 'jquery';
 import EmberFlexberryTranslations from 'ember-flexberry/locales/ru/translations';
 
 import IISProba_10ГородLForm from './forms/i-i-s-proba-10-город-l';
+import IISProba_10ДомLForm from './forms/i-i-s-proba-10-дом-l';
 import IISProba_10УлицаLForm from './forms/i-i-s-proba-10-улица-l';
 import IISProba_10ГородEForm from './forms/i-i-s-proba-10-город-e';
+import IISProba_10ДомEForm from './forms/i-i-s-proba-10-дом-e';
 import IISProba_10УлицаEForm from './forms/i-i-s-proba-10-улица-e';
 import IISProba_10ГородModel from './models/i-i-s-proba-10-город';
+import IISProba_10ДомModel from './models/i-i-s-proba-10-дом';
 import IISProba_10УлицаModel from './models/i-i-s-proba-10-улица';
 
 const translations = {};
@@ -14,6 +17,7 @@ $.extend(true, translations, EmberFlexberryTranslations);
 $.extend(true, translations, {
   models: {
     'i-i-s-proba-10-город': IISProba_10ГородModel,
+    'i-i-s-proba-10-дом': IISProba_10ДомModel,
     'i-i-s-proba-10-улица': IISProba_10УлицаModel
   },
 
@@ -90,6 +94,10 @@ $.extend(true, translations, {
           'i-i-s-proba-10-улица-l': {
             caption: 'Улица',
             title: ''
+          },
+          'i-i-s-proba-10-дом-l': {
+            caption: 'ДомL',
+            title: ''
           }
         }
       }
@@ -104,8 +112,10 @@ $.extend(true, translations, {
       'delete-error-message-caption': 'Ошибка удаления'
     },
     'i-i-s-proba-10-город-l': IISProba_10ГородLForm,
+    'i-i-s-proba-10-дом-l': IISProba_10ДомLForm,
     'i-i-s-proba-10-улица-l': IISProba_10УлицаLForm,
     'i-i-s-proba-10-город-e': IISProba_10ГородEForm,
+    'i-i-s-proba-10-дом-e': IISProba_10ДомEForm,
     'i-i-s-proba-10-улица-e': IISProba_10УлицаEForm
   },
 

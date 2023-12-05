@@ -1,13 +1,13 @@
 ﻿{
-  "name": "IISProba_10Улица",
-  "modelName": "i-i-s-proba-10-улица",
-  "className": "Улица",
+  "name": "IISProba_10Дом",
+  "modelName": "i-i-s-proba-10-дом",
+  "className": "Дом",
   "nameSpace": "IIS.Proba_10",
   "parentModelName": null,
   "parentClassName": null,
   "attrs": [
     {
-      "name": "назв",
+      "name": "номер",
       "type": "string",
       "flexberryType": "string",
       "notNull": false,
@@ -16,24 +16,16 @@
       "ordered": false
     }
   ],
-  "belongsTo": [
-    {
-      "polymorphic": false,
-      "presence": true,
-      "name": "дом",
-      "relatedTo": "i-i-s-proba-10-дом",
-      "inverse": null
-    }
-  ],
+  "belongsTo": [],
   "hasMany": [],
   "projections": [
     {
-      "name": "УлицаE",
-      "modelName": "i-i-s-proba-10-улица",
+      "name": "ДомE",
+      "modelName": "i-i-s-proba-10-дом",
       "attrs": [
         {
-          "name": "назв",
-          "caption": "Назв",
+          "name": "номер",
+          "caption": "",
           "hidden": false,
           "index": 0
         }
@@ -42,12 +34,12 @@
       "hasMany": []
     },
     {
-      "name": "УлицаL",
-      "modelName": "i-i-s-proba-10-улица",
+      "name": "ДомL",
+      "modelName": "i-i-s-proba-10-дом",
       "attrs": [
         {
-          "name": "назв",
-          "caption": "Назв",
+          "name": "номер",
+          "caption": "",
           "hidden": false,
           "index": 0
         }

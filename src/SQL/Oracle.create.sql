@@ -15,12 +15,25 @@ CREATE TABLE "Город"
 ) ;
 
 
+CREATE TABLE "Дом"
+(
+
+	"primaryKey" RAW(16) NOT NULL,
+
+	"Номер" NVARCHAR2(255) NULL,
+
+	 PRIMARY KEY ("primaryKey")
+) ;
+
+
 CREATE TABLE "Улица"
 (
 
 	"primaryKey" RAW(16) NOT NULL,
 
 	"Назв" NVARCHAR2(255) NULL,
+
+	"Дом" RAW(16) NOT NULL,
 
 	 PRIMARY KEY ("primaryKey")
 ) ;
@@ -228,6 +241,11 @@ ALTER TABLE "Город"
 	ADD CONSTRAINT "Город_FУлица_0" FOREIGN KEY ("Улица") REFERENCES "Улица" ("primaryKey");
 
 CREATE INDEX "Город_IУлица" on "Город" ("Улица");
+
+ALTER TABLE "Улица"
+	ADD CONSTRAINT "Улица_FДом_0" FOREIGN KEY ("Дом") REFERENCES "Дом" ("primaryKey");
+
+CREATE INDEX "Улица_IДом" on "Улица" ("Дом");
 
 ALTER TABLE "STORMWEBSEARCH"
 	ADD CONSTRAINT "STORMWEBSEARCH_FSTORMFILT_6521" FOREIGN KEY ("FilterSetting_m0") REFERENCES "STORMFILTERSETTING" ("primaryKey");

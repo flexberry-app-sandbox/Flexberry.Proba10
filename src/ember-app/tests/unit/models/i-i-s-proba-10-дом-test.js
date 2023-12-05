@@ -1,6 +1,6 @@
 import { moduleForModel, test } from 'ember-qunit';
 
-moduleForModel('i-i-s-proba-10-улица', 'Unit | Model | i-i-s-proba-10-улица', {
+moduleForModel('i-i-s-proba-10-дом', 'Unit | Model | i-i-s-proba-10-дом', {
   // Specify the other units that are required for this test.
   needs: [
     'model:i-i-s-proba-10-город',

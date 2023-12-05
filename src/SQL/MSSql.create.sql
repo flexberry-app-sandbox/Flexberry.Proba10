@@ -13,11 +13,22 @@ CREATE TABLE [Город] (
 	 PRIMARY KEY ([primaryKey]))
 
 
+CREATE TABLE [Дом] (
+
+	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [Номер] VARCHAR(255)  NULL,
+
+	 PRIMARY KEY ([primaryKey]))
+
+
 CREATE TABLE [Улица] (
 
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
 
 	 [Назв] VARCHAR(255)  NULL,
+
+	 [Дом] UNIQUEIDENTIFIER  NOT NULL,
 
 	 PRIMARY KEY ([primaryKey]))
 

@@ -21,6 +21,13 @@
           "caption": "Улица",
           "title": "",
           "children": null
+        },
+        {
+          "link": "i-i-s-proba-10-дом-l",
+          "menuName": null,
+          "caption": "ДомL",
+          "title": "",
+          "children": null
         }
       ]
     }
